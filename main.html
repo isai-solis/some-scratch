@@ -11,25 +11,71 @@
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <h3 class="section-title">Wins</h3>
-                <div class="col-4">col-4</div>
-                <div class="col-8">col-8</div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Start Game</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Reset Stats</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Quit Game</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="list-group">
+                        <div class="list-group-item list-group-item-action flex-column align-items-start ">
+                            <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Word Guess Instructions</h5>
+                            </div>
+                            <p class="mb-1">Use the menu to start a guessing game. Guess the letters in the word by pressing letter keys. You will have 5 more guesses than the number of letters in the word. Use the menu to quit at anytime</p>
+                        </div>
+                        <div class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Word to Guess</h5>
+                            </div>
+                            <p class="mb-1" id="wordToGuess">_ _ _ _ _</p>
+                            <small class="text-muted" id="feedbackMessage">Incorrect or Correct</small>
+                        </div>
+                        <div class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Letters Guessed</h5>
+                            </div>
+                            <p class="mb-1">_ _ _ _ _</p>
+                        </div>
+                        <div class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Guesses Remaining</h5>
+                            <span class="badge badge-primary badge-pill">10</span>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Total Wins</h5>
+                            <span class="badge badge-primary badge-pill">3</span>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Total Losses</h5>
+                            <span class="badge badge-primary badge-pill">1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <h3 class="section-title">Guess This Word</h3>
-                <div class="col-4">col-4</div>
-                <div class="col-8">col-8</div>
-            </div>
-            <div class="row">
-                <h3 class="section-title">Number of Guesses Remaining</h3>
-                <div class="col-4">col-4</div>
-                <div class="col-8">col-8</div>
-            </div><div class="row">
-                <h3 class="section-title">Letters Already Guessed</h3>
-                <div class="col-4">col-4</div>
-                <div class="col-8">col-8</div>
-            </div> 
         </div>
+        
     </body>
 </html>
